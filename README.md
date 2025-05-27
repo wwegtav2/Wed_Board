@@ -9,4 +9,4 @@
 
 ## 🔗 Links
 
-[![IG](https://img.shields.io/badge/instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://web.facebook.com/muhammad.wanmasae.2025/)
+[![IG](https://img.shields.io/badge/instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/mmzz_2548/)
