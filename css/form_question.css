@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #000000;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 8px;
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    background-color: #ffffff;
+    border-radius: 8px;
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    max-width: 510px;
+    min-height: 163px;
+    border-radius: 8px;
+}
+
+.div5 {
+    grid-column: span 4 / span 4;
+    grid-row: span 8 / span 8;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.div_h1 {
+    width: 100%;
+    text-align: center;
+    margin: 200px 0;
+
+    p {
+        font-size: 25px;
+        text-align: left;
+        margin: 0 0 0 120px;
+    }
+}
+
+.name_p {
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.name_p:hover {
+    color: #565558;
+    transition: 0.2s ease all;
+}
+
+.li_a {
+    list-style-type: none;
+
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+}
+
+/* From Uiverse.io by cssbuttons-io */
+button {
+    width: 250px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
+    margin: 70px 50px;
+}
+
+button,
+button span {
+    transition: 200ms;
+}
+
+button .text {
+    transform: translateX(35px);
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Prompt', sans-serif;
+}
+
+button .icon {
+    position: absolute;
+    border-left: 0 solid #c41b1b;
+    transform: translateX(200px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button svg {
+    width: 20px;
+    fill: #ffffff;
+}
+
+button:hover {
+    background: #ff3636;
+}
+
+button:hover .text {
+    color: transparent;
+}
+
+button:hover .icon {
+    width: 240px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active .icon svg {
+    transform: scale(0.8);
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: typing 3s steps(25) forwards, blink 0.75s step-end infinite;
+    width: 0;
+    font-size: 55px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 25ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* จาก Uiverse.io by UtariD86 — ปรับชื่อคลาสใหม่ทั้งหมด */
+
+.btn-animated {
+    width: 250px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #00a600;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    position: relative;
+    /* สำคัญ: ให้ .btn-icon ใช้ absolute ได้ */
+    transition: background 200ms;
+}
+
+.btn-animated,
+.btn-animated span {
+    transition: 200ms;
+}
+
+.btn-text {
+    transform: translateX(35px);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 200ms;
+    font-family: 'Prompt', sans-serif;
+}
+
+.btn-icon {
+    position: absolute;
+    border-left: 0 solid #007300;
+    transform: translateX(190px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms;
+}
+
+.btn-animated svg {
+    width: 20px;
+    fill: #eee;
+}
+
+.btn-animated:hover {
+    background: #00a600;
+}
+
+.btn-animated:active {
+    background: #00cc00;
+}
+
+.btn-animated:hover .btn-text {
+    color: transparent;
+}
+
+.btn-animated:hover .btn-icon {
+    width: 220px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.btn-animated:focus {
+    outline: none;
+}
+
+.btn-animated:active .btn-icon svg {
+    transform: scale(0.8);
+}
+
+.btn-icon-symbol {
+    color: white;
+    font-size: 40px;
+}
+
+/* ปุ่มแอนิเมชันเว็บกระทู้ - ตั้งชื่อใหม่ทั้งหมด */
+
+.forum-btn-animated {
+    width: 250px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #00a600;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: background 200ms;
+}
+
+.forum-btn-animated,
+.forum-btn-animated span {
+    transition: 200ms;
+}
+
+.forum-btn-label {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+    transition: color 200ms;
+    font-family: 'Prompt', sans-serif;
+    font-size: 25px;
+}
+
+.forum-btn-icon {
+    position: absolute;
+    border-left: 0 solid #007300;
+    transform: translateX(190px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms;
+
+}
+
+.forum-btn-animated svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.forum-btn-animated:hover {
+    background: #00a600;
+}
+
+.forum-btn-animated:active {
+    background: #00cc00;
+}
+
+.forum-btn-animated:hover .forum-btn-label {
+    color: transparent;
+}
+
+.forum-btn-animated:hover .forum-btn-icon {
+    width: 225px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.forum-btn-animated:focus {
+    outline: none;
+}
+
+.forum-btn-animated:active .forum-btn-icon svg {
+    transform: scale(0.8);
+}
+
+.forum-btn-plus {
+    color: white;
+    font-size: 40px;
+}

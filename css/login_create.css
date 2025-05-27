@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+
+body {
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/imgs/ino2.png);
+    font-family: 'Prompt', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 600px;
+    margin: 0 auto;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 45px auto;
+
+
+    h2 {
+        text-align: center;
+        margin: 30px 0;
+        font-size: 35px;
+    }
+}
+
+.Name_Surname {
+    width: 100%;
+    margin: 10px 50px;
+    border-radius: 4px;
+
+    .na_me {
+        width: 30%;
+        height: 30px;
+        border: 2px solid #000000;
+        border-radius: 8px;
+    }
+
+
+    .na_me:focus {
+        outline: none;
+        border: 3px solid #000000;
+        outline-offset: 5px;
+        border-radius: 8px;
+    }
+
+    .sur_name {
+        width: 30%;
+        height: 30px;
+        border: 2px solid #000000;
+        border-radius: 8px;
+    }
+
+    .sur_name:focus {
+        outline: none;
+        border: 3px solid #000000;
+        outline-offset: 5px;
+        border-radius: 8px;
+    }
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+}
+
+.Sex {
+    margin: 10px 50px;
+    border-radius: 4px;
+
+    .sex_gender {
+        width: 135px;
+        height: 40px;
+        border: 2px solid #000000;
+        border-radius: 8px;
+        font-family: 'Prompt', sans-serif;
+    }
+
+    .sex_gender:hover {
+        outline: none;
+        border: 3px solid #000000;
+        outline-offset: 5px;
+    }
+}
+
+.Birth {
+    border-radius: 4px;
+
+    .date_birth {
+        width: 193px;
+        height: 40px;
+        border: 2px solid #000000;
+        border-radius: 8px;
+        font-family: 'Prompt', sans-serif;
+    }
+
+    .date_birth:hover {
+        outline: none;
+        border: 3px solid #000000;
+        outline-offset: 5px;
+    }
+}
+
+
+.Address {
+    width: 100%;
+    margin: 20px 50px;
+    border-radius: 4px;
+
+    .text_address {
+        width: 71%;
+        height: 30px;
+        border: 2px solid #000000;
+        border-radius: 8px;
+    }
+
+    .text_address:focus {
+        outline: none;
+        border: 3px solid #000000;
+        outline-offset: 5px;
+    }
+}
+
+.Telephone {
+    width: 100%;
+    margin: 20px 50px;
+    border-radius: 4px;
+
+    .telephone_text {
+        width: 61.5%;
+        height: 30px;
+        border: 2px solid #000000;
+        border-radius: 8px;
+    }
+
+    .telephone_text:focus {
+        outline: none;
+        border: 3px solid #000000;
+        outline-offset: 5px;
+    }
+}
+
+.Apply {
+    width: 100%;
+    margin: 20px 50px;
+    border-radius: 4px;
+}
+
+.Cancel {
+    width: 100%;
+    margin: 20px 50px;
+    border-radius: 4px;
+}
+
+.password_num {
+    width: 100%;
+    margin: 20px 50px;
+    border-radius: 4px;
+
+    .password_pass {
+        width: 67%;
+        height: 30px;
+        border: 2px solid #000000;
+        border-radius: 8px;
+    }
+
+    .password_pass:focus {
+        outline: none;
+        border: 3px solid #000000;
+        outline-offset: 5px;
+    }
+}
+
+._num {
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center;
+
+    .Apply {
+        width: 78%;
+        height: 50px;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 4px;
+        margin: 20px 0 0 50px;
+    }
+
+    .apply_send {
+        width: 102.5%;
+        height: 50px;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 35px;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: 'Prompt', sans-serif;
+        transition: 0.2s ease all;
+    }
+
+    .apply_send:hover {
+        background-color: #534545;
+    }
+
+    .Cancel {
+        width: 78%;
+        height: 50px;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 4px;
+        margin: 20px 0 0 50px;
+
+        .apply_Cancel {
+            width: 102.5%;
+            height: 50px;
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 4px;
+            text-align: center;
+            line-height: 35px;
+            cursor: pointer;
+            font-size: 20px;
+            font-family: 'Prompt', sans-serif;
+            transition: 0.2s ease all;
+        }
+
+        .apply_Cancel:hover {
+            background-color: #534545;
+        }
+    }
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 24px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: typing 3s steps(25) forwards, blink 0.75s step-end infinite;
+    width: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 25ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.lion {
+    text-align: center;
+
+    .a_lion {
+        color: #000;
+
+        &:hover {
+            color: #534545;
+            text-decoration: none;
+        }
+    }
+}
